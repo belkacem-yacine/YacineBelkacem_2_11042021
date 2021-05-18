@@ -16,7 +16,7 @@ a
     text-decoration: none;
     color: #000;
 }
-
+/*header*/
 header
 {
     display: flex;
@@ -69,10 +69,10 @@ nav a:hover
     color: #0065fc ;
     font-weight: bold;
     padding: 35px 0px 0px 15px;
-    float: right;
-
 }
+/*header*/
 
+/*zone de recherche*/
 .icone_localisation
 {
     background-color: #f2f2f2;
@@ -113,7 +113,6 @@ nav a:hover
 .place_filtres
 {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
     flex-wrap: wrap;
@@ -186,12 +185,15 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
     padding: 4px 7px 4px 7px;
     margin-right: 10px;
 }
+/*zone de recherche*/
 
+/*partie hebergement*/
 .les_hebergements
 {
     display: flex;
 }
 
+/*les hebergements*/
 .hebergements
 {
     width: 70%;
@@ -222,6 +224,11 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
     margin: 0px 15px 30px 15px;
     border-radius: 10px;
     box-shadow: 6px 6px 5px lightgray;
+}
+
+.emplacement_hebergement:hover
+{
+    transform: scale(1.02);
 }
 
 .emplacement_hebergement img
@@ -261,7 +268,9 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
     margin: 10px 0px 10px 45px;
     padding-bottom: 35px;
 }
+/*les hebergements*/
 
+/*les hebergements populaires*/
 .populaire
 {
     width: 30%;
@@ -299,12 +308,16 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 .emplacement_populaire
 {
     width: 80%;
-    height: 130px;
     background-color: #FFFFFF;
     padding: 5px;
     margin: 0px 15px 30px 15px;
     border-radius: 10px;
     box-shadow: 6px 6px 5px lightgray;
+}
+
+.emplacement_populaire:hover
+{
+    transform: scale(1.02);
 }
 
 .emplacement_populaire img
@@ -340,11 +353,12 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 {
     color: #f2f2f2;
 }
+/*les hebergements populaires*/
 
+/*les activites*/
 .activites
 {
-    margin: 60px 0px 30px 0px;
-    width: 100%;
+    margin-top: 60px ;
 }
 
 .activites h2
@@ -369,11 +383,15 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 .activite_medium
 {
     width: 22%;
-    height: 460px;
-    background-color: #FFFFFF;
+    height: auto;
     margin-right: 30px;
     border-radius: 15px;
     box-shadow: 6px 6px 4px #f2f2f2;
+}
+
+.activite_medium:hover
+{
+    transform: scale(1.02);
 }
 
 .activite_medium img
@@ -388,10 +406,14 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 {
     width: 22%;
     height: 230px;
-    background-color: #FFFFFF;
     margin: 0px 60px 25px 30px;
     border-radius: 15px;
     box-shadow: 6px 6px 4px #f2f2f2;
+}
+
+.activite_pomegues:hover
+{
+    transform: scale(1.02);
 }
 
 .activite_pomegues img
@@ -406,10 +428,14 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 {
     width: 22%;
     height: 170px;
-    background-color: #FFFFFF;
     margin: 35px 50px 0px 30px;
     border-radius: 15px;
     box-shadow: 6px 6px 4px #f2f2f2;
+}
+
+.activite_frioul:hover
+{
+    transform: scale(1.02);
 }
 
 .activite_frioul img
@@ -424,10 +450,15 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 {
     width: 22%;
     height: 205px;
-    background-color: #FFFFFF;
-    margin: 0px 0px 20px 30px;
+    margin: auto;
+    margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 6px 6px 4px #f2f2f2;
+}
+
+.activite_garde:hover
+{
+    transform: scale(1.02);
 }
 
 .activite_garde img
@@ -442,10 +473,14 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 {
     width: 22%;
     height: 205px;
-    background-color: #FFFFFF;
-    margin: 30px 0px 0px 30px;
+    margin-top: 30px;
     border-radius: 15px;
     box-shadow: 6px 6px 4px #f2f2f2;
+}
+
+.activite_longchamps:hover
+{
+    transform: scale(1.02);
 }
 
 .activite_longchamps img
@@ -455,10 +490,11 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
     height: 160px;
     border-radius: 15px 15px 0px 0px;
 }
+/*les activites*/
 
+/*footer*/
 footer
 {
-    width: 100%;
     background-color: #f2f2f2 ; 
     padding: 20px 0px 25px 0px;
 }
@@ -472,15 +508,146 @@ footer
 {
     display: flex;
     flex-direction: column;
-    margin: 0px 250px 15px 40px;
+    width: 33%;
+    margin-left: 29px;
 }
 
 .colonne_footer a
 {
     line-height: 30px;
 }
+/*footer*/
 
-@media screen and (max-width: 767px)
+/*media queries pour tablette*/
+@media screen and (min-width: 455px) and (max-width: 1290px)
+{
+   .les_hebergements
+   {
+       flex-direction: column;
+       margin-top: 30px;
+   } 
+
+   .populaire
+   {
+       order: -1;
+       width: 100%;
+   }
+
+   .bloc_populaire
+   {
+       flex-direction: row;
+   }
+
+   .etoiles_populaire
+   {
+       margin: auto;
+   }
+    .hebergements
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+   .emplacement_hebergement
+   {
+       margin-right: 50px;
+   }
+
+   .activite_medium 
+   {
+       margin: auto;
+       height: auto;
+   }
+
+   .activite_pomegues
+   {
+       margin: auto;
+       margin-bottom: 30px;
+   }
+
+   .activite_frioul
+   {
+       margin: auto;
+       margin-top: 29px;
+   }
+
+   .activite_garde
+   {
+       height: auto;
+   }
+
+   .activite_longchamps
+   {
+       margin: auto;
+       margin-top: 6px;
+   }
+
+}
+/*media queries pour tablette*/
+
+/*media queries pour ecran de moins de 830px*/
+@media screen and (max-width: 830px)
+{
+    .place_filtres h2
+    {
+        width: 100%;
+    }
+    
+    .bouton_filtre
+    {
+        margin: 0px 25px 10px 0px;
+    }
+
+    .bloc_populaire
+    {
+        flex-direction: column;
+    }
+
+    .bloc_activite
+    {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .activite_medium 
+    {
+        order: -1;
+        width: 45%;
+    }
+ 
+    .activite_pomegues
+    {
+        margin-top: 30px;
+        width: 45%;
+    }
+ 
+    .activite_frioul
+    {
+        width: 45%;
+        height: auto;
+    }
+
+    .activite_frioul img
+    {
+        height: 185px;
+    }
+ 
+    .activite_garde
+    {
+        width: 45%;
+    }
+ 
+    .activite_longchamps
+    {
+        width: 45%;
+        height: auto;
+        margin-top: 0px;
+    }
+}
+/*media queries pour ecran de moins de 830px*/
+
+/*media queries pour smartphones*/
+@media screen and (max-width: 455px)
 {
     #bloc_page
     {
@@ -566,16 +733,6 @@ footer
     {
         display: flex;
     }
-    
-    .place_filtres h2
-    {
-        width: -moz-available;
-    }
-
-    .bouton_filtre
-    {
-        margin: 0px 25px 10px 0px;
-    }
 
     .texte_filtre i
     {
@@ -586,7 +743,6 @@ footer
     {
         display: flex;
         flex-direction: column;
-
     }
 
     .hebergements
@@ -687,7 +843,6 @@ footer
         height: auto;
         margin: auto;
         margin-bottom: 25px;
-
     }
 
     .activite_medium img
@@ -726,5 +881,5 @@ footer
         margin-left: 28px;  
         margin-right: auto;
     }
-
 }
+/*media queries pour smartphones*/
