@@ -146,8 +146,7 @@ nav a:hover
     width: 35px;
     border-radius: 20px 20px 20px 20px;
     margin-left: -11px;  
-    margin-right: 10px; 
-    float: left; 
+    margin-right: 10px;   
 }
 
 input[type="checkbox"].filtres
@@ -217,11 +216,11 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 
 .emplacement_hebergement
 {
-    width: 230px;
+    width: 27%;
     height: 190px;
     background-color: #FFFFFF;
     padding: 5px;
-    margin: 0px 15px 30px 15px;
+    margin-bottom: 35px;
     border-radius: 10px;
     box-shadow: 6px 6px 5px lightgray;
 }
@@ -235,7 +234,7 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 {
     object-fit: cover;
     width: 100%;
-    height: 102px;
+    height: 114px;
     border-radius: 10px 10px 0px 0px;
 
 }
@@ -384,7 +383,7 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 {
     width: 22%;
     height: auto;
-    margin-right: 30px;
+    margin-right: 37px;
     border-radius: 15px;
     box-shadow: 6px 6px 4px #f2f2f2;
 }
@@ -406,7 +405,7 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 {
     width: 22%;
     height: 230px;
-    margin: 0px 60px 25px 30px;
+    margin: 0px 40px 25px 5px;
     border-radius: 15px;
     box-shadow: 6px 6px 4px #f2f2f2;
 }
@@ -428,7 +427,7 @@ input[type="checkbox"].filtres:checked + label , input[type="checkbox"].filtres:
 {
     width: 22%;
     height: 170px;
-    margin: 35px 50px 0px 30px;
+    margin: 35px 40px 0px 5px;
     border-radius: 15px;
     box-shadow: 6px 6px 4px #f2f2f2;
 }
@@ -550,7 +549,8 @@ footer
 
    .emplacement_hebergement
    {
-       margin-right: 50px;
+        width: 250px;
+        margin-right: 50px;
    }
 
    .activite_medium 
@@ -613,8 +613,13 @@ footer
     {
         order: -1;
         width: 45%;
+        height: 460px;
     }
- 
+
+    .activite_medium img
+    {
+        height: 400px;
+    }
     .activite_pomegues
     {
         margin-top: 30px;
@@ -645,6 +650,24 @@ footer
     }
 }
 /*media queries pour ecran de moins de 830px*/
+
+/*media queries footer*/
+@media screen and (max-width: 655px)
+{
+    .organisation_footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colonne_footer
+    { 
+        margin-left: 28px;  
+        margin-right: auto;
+        width: auto;
+    }   
+}
+/*media queries footer*/
 
 /*media queries pour smartphones*/
 @media screen and (max-width: 455px)
@@ -869,17 +892,4 @@ footer
     {
         height: 130px;
     }
-
-    .organisation_footer
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .colonne_footer
-    { 
-        margin-left: 28px;  
-        margin-right: auto;
-    }
-}
 /*media queries pour smartphones*/
