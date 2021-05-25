@@ -29,40 +29,38 @@
             <section class="recherche">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-                <div class="zone_recherche">
-                    <form method="POST" action="traitement.php">
-                        <div class="barre_de_recherche">
-                            <button class="icone_localisation"><i class="fas fa-map-marker-alt"></i></button>
-                            <label for="barre_de_recherche"></label>
-                            <input type="search" name="barre_de_recherche" id="barre_de_recherche" placeholder="Marseille,France">
-                            <span><i class="fas fa-search"></i><input type="submit" value="Rechercher" id="bouton_recherche"></span>
+                <form method="POST" action="traitement.php">
+                    <div class="barre_de_recherche">
+                        <button class="icone_localisation"><i class="fas fa-map-marker-alt"></i></button>
+                        <label for="barre_de_recherche"></label>
+                        <input type="search" name="barre_de_recherche" id="barre_de_recherche" placeholder="Marseille,France">
+                        <span><i class="fas fa-search"></i><input type="submit" value="Rechercher" id="bouton_recherche"></span>
+                    </div>
+                
+                        
+                    <div class="place_filtres">
+                        <h2>Filtres</h2>
+                        <div class="bouton_filtre">
+                            <input type="checkbox" name="economique" id="economique" class="filtres" />
+                            <label for="economique"><i class="fas fa-money-bill-wave"></i> Économique</label>    
                         </div>
-                    
-                            
-                        <div class="place_filtres">
-                            <h2>Filtres</h2>
-                            <div class="bouton_filtre">
-                                <input type="checkbox" name="economique" id="economique" class="filtres" />
-                                <label for="economique"><i class="fas fa-money-bill-wave"></i> Économique</label>    
-                            </div>
 
-                            <div class="bouton_filtre">
-                                <input type="checkbox" name="familial" id="familial" class="filtres" />
-                                <label for="familial"><i class="fas fa-child"></i>Familial</label>                           
-                            </div>
-
-                            <div class="bouton_filtre">
-                                <input type="checkbox" name="romantique" id="romantique" class="filtres" />
-                                <label for="romantique"><i class="fas fa-heart"></i>Romantique</label> 
-                            </div>
-
-                            <div class="bouton_filtre">
-                                <input type="checkbox" name="animaux" id="animaux" class="filtres" />
-                                <label for="animaux"><i class="fas fa-dog"></i>Animaux autorisés</label>
-                            </div>
+                        <div class="bouton_filtre">
+                            <input type="checkbox" name="familial" id="familial" class="filtres" />
+                            <label for="familial"><i class="fas fa-child"></i>Familial</label>                           
                         </div>
-                    </form> 
-                </div>
+
+                        <div class="bouton_filtre">
+                            <input type="checkbox" name="romantique" id="romantique" class="filtres" />
+                            <label for="romantique"><i class="fas fa-heart"></i>Romantique</label> 
+                        </div>
+
+                        <div class="bouton_filtre">
+                            <input type="checkbox" name="animaux" id="animaux" class="filtres" />
+                            <label for="animaux"><i class="fas fa-dog"></i>Animaux autorisés</label>
+                        </div>
+                    </div>
+                </form> 
                 
                 <div class="texte_filtre">
                     <i class="fas fa-info"></i>
