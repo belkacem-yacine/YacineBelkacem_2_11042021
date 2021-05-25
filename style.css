@@ -23,35 +23,18 @@ header
     height: 100px;
 }
 
+#logo
+{   
+    height: 40px;
+    margin-top: 20px;
+}
+
 .nav_menu
 {
     display: flex;
     justify-content: flex-end;
     flex: 1;
 }
-header img
-{
-    height: 40px;
-}
-
-#logo
-{
-    margin-top: 20px;
-}
-
-#menu
-{
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav div
-{
-    list-style-type: none;
-    text-decoration: none;
-}
-
 nav a
 {
     display: inline-block;
@@ -692,7 +675,7 @@ footer
 
     .nav_menu
     {
-        order: 3;
+        order: 1;
         display: flex;
         justify-content: space-around;  
     }
@@ -770,7 +753,7 @@ footer
 
     .hebergements
     {
-        order: 2;
+        order: 1;
     }
 
     .populaire
